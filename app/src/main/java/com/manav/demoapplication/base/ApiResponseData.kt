@@ -1,6 +1,6 @@
 package com.manav.demoapplication.base
 
-import com.manav.demoapplication.ApiError
+import com.manav.demoapplication.utils.ApiError
 
 /**
  * Sealed class to observe changes on [android.app.Activity]

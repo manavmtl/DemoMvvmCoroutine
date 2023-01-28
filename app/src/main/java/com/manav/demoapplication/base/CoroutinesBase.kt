@@ -12,9 +12,10 @@ object CoroutinesBase {
             work()
         }
 
-    fun async(work: suspend (() -> Any))=CoroutineScope(Dispatchers.Main).async {
-        work()
-    }
+    fun async(work: suspend (() -> Any)) =
+        CoroutineScope(Dispatchers.Main).async {
+            work()
+        }
 
     fun io(work: suspend (() -> Unit)) =
         CoroutineScope(Dispatchers.IO).launch {
@@ -30,6 +31,4 @@ object CoroutinesBase {
         CoroutineScope(Dispatchers.Unconfined).launch {
 
         }
-
-
 }

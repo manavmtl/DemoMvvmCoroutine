@@ -1,7 +1,7 @@
 package com.manav.demoapplication.base
 
 import androidx.lifecycle.Observer
-import com.manav.demoapplication.ApiError
+import com.manav.demoapplication.utils.ApiError
 
 interface LiveDataObserver<T> : Observer<ApiResponseData> {
     fun onResponseSuccess(statusCode: Int, apiCode: Int, msg: String?)

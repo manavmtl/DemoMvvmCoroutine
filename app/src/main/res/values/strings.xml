@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Demo Application</string>
+    <string name="mapsKey">AIzaSyChSSKKraOW4UpWtLVxE0mR0Yd2KQDbrwk</string>
 </resources>

@@ -1,13 +1,11 @@
 package com.manav.demoapplication.base
 
-import com.manav.demoapplication.retrofit.GenericApiRequest
-import com.manav.demoapplication.retrofit.RetrofitClass
+import com.manav.demoapplication.base.GenericApiRequest
+import com.manav.demoapplication.network.RetrofitObject
 
-/**
- * Base class for all repos using in App
- *
- */
 open class BaseRepo : GenericApiRequest<Any>() {
-    protected val unauthenticatedApiClient = RetrofitClass.getRetroInstance().getService()
+
+    val normalClient = RetrofitObject.apiService
+    val imageClient = RetrofitObject.apiServiceImage
 
 }
